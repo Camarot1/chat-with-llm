@@ -18,6 +18,7 @@ function App() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
+          model: 'gemma-3-1b-it-glm-4.7-flash-heretic-uncensored-thinking_gguf', // тут мы указываем модель llm которую будем использовать. не забыть включить и сервер
           messages: [{ role: 'user', content: input }],
           temperature: 0.7,
           stream: false
